@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block content %}
+<div id="title">
+Welcome to the skills tracker. Update the table below with your skills and plans to improve them.
+</div>
+<div id="buttongrp">
+    <button id="addskills" class="button">Add Skills</button>
+    <button id="saveskills" class="button" >Save Table</button>
+    <button id="downloadskills" class="button">Download</button>
+</div>
+<h2 style="margin-bottom: 10px;">Skills</h2>
+<div id="skillstable"></div>
+<h2 style="margin-top:20px;margin-bottom: 10px;">History</h2>
+<div id="histtable"></div>
+<script type=text/javascript src="{{url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}
